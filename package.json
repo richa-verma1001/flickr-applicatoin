@@ -1,0 +1,29 @@
+{
+  "name": "angular-ecosystem",
+  "version": "1.0.0",
+  "description": "Demonstrate running a Hello Angular app with its ecosystem",
+  "main": "index.js",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "webpack": "^1.13.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richa-verma1001/angular-ecosystem.git"
+  },
+  "keywords": [
+    "angular",
+    "helloWorld",
+    "ecosystem"
+  ],
+  "author": "Richa Verma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/richa-verma1001/angular-ecosystem/issues"
+  },
+  "homepage": "https://github.com/richa-verma1001/angular-ecosystem#readme"
+}
