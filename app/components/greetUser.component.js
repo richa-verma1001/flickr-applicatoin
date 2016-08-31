@@ -5,11 +5,20 @@ var greetModule = angular.module(moduleName, []);
 
 
 greetModule.component('greetUser', {
-    templateUrl: './app/components/greetUser.component.html',
-    controller: function greetUserController() {
+    //templateUrl: './app/components/greetUser.component.html',
+    template: 'Hello, {{$ctrl.user}}!',
+    controller: function GreetUserController() {
       this.user = 'world';
-    },
-    controllerAs: 'model'
+    }
+    // controller: function greetUserController() {
+    //   this.data = [
+    //     {
+    //       name: 'richa',
+    //       phone: '22'
+    //     }
+    //   ];
+    // },
+    // controllerAs: 'user'
   });
 
 console.log('GreetUser' + greetModule);
