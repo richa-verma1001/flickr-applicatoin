@@ -1,5 +1,5 @@
 ## About
-A basic angular application to demonstrate how to run Hello Angular with its ecosystem.
+A basic angular application to demonstrate how to run Hello Angular with its ecosystem.[Use this version to understand very basic Angular routing]
 
 There are two parts to understand here.
 1. For firsts, you can always clone this repo and run it locally to get your Hello Angular app going.
@@ -19,9 +19,11 @@ With the above configurations, you should have your ecosystem ready to help you 
 ### What to expect
 The current version of application instantiates angular in a template by adding the 'ng-app' attribute to the template <html> tag. This starts angular 'myApp' application.
 
-Result: At this point in applicaion, you will see 'Hello, world' printed out from a angular application [greet-user]
++ Constructed a page with header, navigation, layout and footer.
++ Added basic routing to the application.
+
 
 ### Conventions
 + Template files to be saved as <componentName>.template.html or <componentName>.html ==> Saving with other naming conventions did not load the controller date into my template.
 + Components by convention are named as <componentName>.component.js
-+ 
++

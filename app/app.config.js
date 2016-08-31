@@ -1,15 +1,9 @@
-import angular from 'angular';
+import myApp from 'myApp';
 import angularRoute from 'angular-route';
-import greetUser from './components/greetUser.component';
-
-const moduleName = 'myApp';
-var myApp = angular.module(moduleName, [angularRoute, greetUser]);
-console.log('MyApp' + myApp);
-
 
 myApp.config(['$locationProvider', '$routeProvider',
     function config($locationProvider, $routeProvider) {
-      $locationProvider.hashPrefix('!');
+      locationProvider.hashPrefix('!');
 
       $routeProvider.
       when('/details', {
@@ -18,5 +12,3 @@ myApp.config(['$locationProvider', '$routeProvider',
       otherwise('/details');
     }
 ]);
-
-export default moduleName;
