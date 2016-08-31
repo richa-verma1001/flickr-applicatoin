@@ -20,3 +20,8 @@ With the above configurations, you should have your ecosystem ready to help you 
 The current version of application instantiates angular in a template by adding the 'ng-app' attribute to the template <html> tag. This starts angular 'myApp' application.
 
 Result: At this point in applicaion, you will see 'Hello, world' printed out from a angular application [greet-user]
+
+### Conventions
++ Template files to be saved as <componentName>.template.html or <componentName>.html ==> Saving with other naming conventions did not load the controller date into my template.
++ Components by convention are named as <componentName>.component.js
++ 
