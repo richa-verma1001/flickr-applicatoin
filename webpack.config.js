@@ -7,7 +7,7 @@ var HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
 
 module.exports = {
 	entry: [
-		'./app/index.js'
+		'./app/app.js'
 	],
 	output: {
 		path: __dirname + '/dist',
@@ -15,7 +15,9 @@ module.exports = {
 	},
 	module: {
 		loaders: [
-			{test: /\.js$/, exclude: /node_modules/, loader: "babel-loader"}
+			{test: /\.js$/, exclude: /node_modules/, loader: 'babel'},
+			{test: /\.less$/, exclude: /node_modules/, loader: 'style!css!less'},
+			{test: /\.json$/, exclude: /node_modules/, loader: 'json'}
 		]
 	},
 	plugins: [HtmlWebpackPluginConfig]
