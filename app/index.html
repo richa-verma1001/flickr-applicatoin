@@ -8,9 +8,14 @@
 <body class='box'>
 	<div class='banner'> Header </div>
 	<div class='panes'>
-		<div class='leftPane'>Navigation</div>
+		<div class='leftPane'>
+			<ul>
+				<li><a ui-sref="hello">SayHello</a></li>
+				<li><a ui-sref="about">About</a></li>
+			</ul>
+		</div>
 		<div class='rightPane'>
-		  <div ng-view></div>
+		  <div ui-view></div>
 		</div>
 	</div>
 	<div class='footer'>Footer Link</div>
