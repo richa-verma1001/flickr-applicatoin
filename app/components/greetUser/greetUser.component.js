@@ -7,7 +7,7 @@ var greetModule = angular.module(moduleName, []);
 greetModule.component('greetUser', {
     //templateUrl: './app/components/greetUser.component.html',
     //template: 'Hello, {{$ctrl.user}}!',
-    templateUrl: './app/components/greetUser.template.html',
+    templateUrl: './app/components/greetUser/greetUser.template.html',
     controller: function GreetUserController() {
       this.user = 'richa';
     }
