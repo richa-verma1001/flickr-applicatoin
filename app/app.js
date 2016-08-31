@@ -1,5 +1,5 @@
 import angular from 'angular';
-import greetUser from './greetUser.component';
+import greetUser from './components/greetUser.component';
 
 const moduleName = 'myApp';
 var myApp = angular.module(moduleName, [greetUser]);
