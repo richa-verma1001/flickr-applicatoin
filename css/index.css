@@ -5,13 +5,12 @@
 }
 
 .banner {
-  color: pink;
   text-align: top;
   margin: 0px;
 }
 
 .panes {
-  border: 1px solid blue;
+  border: 1px solid #ccc;
   overflow: hidden;
   padding: 10px;
 }
@@ -19,6 +18,7 @@
 .leftPane {
   border: 2px solid green;
   float: left;
+  width: 10%;
 
 }
 
@@ -29,7 +29,7 @@
 }
 
 .footer {
-  border: 2px solid #cff;
+  border: 2px solid #ccc;
   text-align: bottom;
   margin-top: 10px;
   padding-top: 10px;

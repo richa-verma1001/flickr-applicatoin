@@ -5,12 +5,19 @@
 </head>
 <link rel="stylesheet" type="text/css" href="css/index.css" />
 
-<body>
-	<h6> Hello Webpack! <h6>
-	<div class=''>
-		<h6>Add Numbers: {{2 + 4 + 5}}</h6>
+<body class='box'>
+	<div class='banner'> Header </div>
+	<div class='panes'>
+		<div class='leftPane'>Navigation</div>
+		<div class='rightPane'>
+			<ul>
+				<li>Add Numbers: {{2 + 4 + 5}}</li>
+				<li><greet-user></greet-user></li>
+			</ul>
+
+		</div>
 	</div>
-	<greet-user></greet-user>
+	<div class='footer'>Footer Link</div>
 </body>
 
 </html>
