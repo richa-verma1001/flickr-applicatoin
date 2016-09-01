@@ -1,15 +1,15 @@
 import angular from 'angular';
-//import angularRoute from 'angular-route';
 import 'angular-ui-router';
 import greetUser from './components/greetUser/greetUser.component';
 import aboutUser from './components/aboutUser/aboutUser.component';
+import userAddress from './components/address/userAddress.component';
 
 const moduleName = 'myApp';
-var myApp = angular.module(moduleName, ['ui.router', greetUser, aboutUser]);
+var myApp = angular.module(moduleName, ['ui.router', greetUser, aboutUser, userAddress]);
 
 myApp.config(['$stateProvider', '$urlRouterProvider',
   function config($stateProvider, $urlRouterProvider) {
-    $urlRouterProvider.otherwise("/state1");
+    $urlRouterProvider.otherwise("/hello");
 
     $stateProvider
       .state('hello',{
@@ -19,24 +19,17 @@ myApp.config(['$stateProvider', '$urlRouterProvider',
       .state('about',{
         url: "/about",
         template: '<about-user></about-user>'
+      }).state('address', {
+        url: "/address",
+        template: '<user-address></user-address>',
+        controller: function SomeConrtoller($scope, $stateParams){
+          $scope.richa = 'richa';
+          this.richa = 'Richa';
+          $stateParams.things = ['a', 'b', 'c', 'd'];
+          console.log('Print scope inside $stateProvider' + $stateParams);
+        }
       })
   }
 ]);
-
-/*
-myApp.config(['$locationProvider', '$routeProvider',
-    function config($locationProvider, $routeProvider) {
-      $locationProvider.hashPrefix('!');
-
-      $routeProvider.
-      when('/hello', {
-        template: '<greet-user></greet-user>'
-      }).
-      when('/about', {
-        template: '<about-user></about-user>'
-      }).
-      otherwise('/hello');
-    }
-]); */
 
 export default moduleName;
