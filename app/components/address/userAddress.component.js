@@ -6,7 +6,7 @@ var userAddress = angular.module(moduleName, []);
 
 userAddress.component('userAddress', {
   templateUrl: './app/components/address/userAddress.template.html',
-  controller: ['$stateParams', '$scope', UserAddressConrtoller],
+  controller: ['$scope', UserAddressConrtoller],
   controllerAs: 'ctrl'
 });
 

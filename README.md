@@ -20,7 +20,8 @@ With the above configurations, you should have your ecosystem ready to help you 
 The current version of application instantiates angular in a template by adding the 'ng-app' attribute to the template <html> tag. This starts angular 'myApp' application.
 
 + Constructed a page with header, navigation, layout and footer.
-+ Added basic routing to the application.
++ Added basic routing to the application via angular-ui-router
++ Demonstrated passing of data from state to the component controller (Finally Working!)
 
 
 ### Conventions

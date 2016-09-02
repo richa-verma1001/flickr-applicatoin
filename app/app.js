@@ -22,14 +22,11 @@ myApp.config(['$stateProvider', '$urlRouterProvider',
         template: '<about-user></about-user>'
       }).state('address', {
         url: "/address",
-        template: '<user-address my-param=$ctrl.richa></user-address>',
-        controller: UserAddressConrtoller,
-        //component: 'userAddress',
-        resolve: {
-          print: function(){
-            console.log('Resolve before state change to address');
-          }
-        }
+        template: '<user-address></user-address>',
+        controller: ['$scope', function userAddressRouteConrtoller($scope){
+          this.title = 'Text sent from state definition';
+        }],
+        controllerAs: 'userRouteCtrl'
       })
   }
 ]);
