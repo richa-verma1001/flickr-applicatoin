@@ -20,7 +20,7 @@ myApp.config(['$stateProvider', '$urlRouterProvider',
       .state('about',{
         url: "/about",
         template: '<about-user></about-user>'
-      }).state('address', {
+      }).state('about.address', {
         url: "/address",
         template: '<user-address></user-address>',
         controller: ['$scope', function userAddressRouteConrtoller($scope){
