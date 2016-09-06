@@ -1,4 +1,4 @@
 <div>Hello, {{$ctrl.description}}
-  <div><a ui-sref="about.address">Address</a></div>
+  <div><a ui-sref="about.address" ui-sref-opts="{reload: true}">Address</a></div>
   <div ui-view>Replace with address when address is clicked</div>
 </div>
