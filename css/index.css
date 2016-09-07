@@ -2,6 +2,7 @@
   display: block;
   border: 1px solid #ccc;
   padding: 10px;
+  margin: 10px;
 }
 
 .banner {
@@ -40,4 +41,24 @@
   background-color: #ccf;
   padding: 2px;
   margin: 2px;
+}
+
+a {
+  color:hotpink;
+}
+
+a:link {
+  color: red;
+}
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  color: blue;
+}
+
+a:active {
+  color: yellow;
 }
