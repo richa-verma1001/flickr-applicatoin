@@ -62,3 +62,13 @@ a:hover {
 a:active {
   color: yellow;
 }
+
+.image-container ul {
+  list-style:none;
+  display: inline-flex;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
