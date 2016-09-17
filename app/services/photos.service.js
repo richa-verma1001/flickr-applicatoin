@@ -17,15 +17,8 @@ class PhotosService {
     return promise;
   }
 
-  processPhotos() {
-    this.getPhotos().then(function successCallback(response){
-      // response.data has your response result.
-      // Process response.data and store in a DS that can be easily mapped to
-      console.log('Process photos success');
-      return response;
-    }, function errorCallback(response){
-        console.log('Error trying to get photos from flickr');
-    });
+  getImgUrl(photo) {
+
   }
 }
 
