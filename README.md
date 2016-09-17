@@ -1,11 +1,6 @@
 ## About
-A basic angular application to demonstrate how to run Hello Angular with its ecosystem.[Use this version to understand very basic Angular routing]
+Initial angular application to demonstrate pulling photos for flickr. This app uses a nasa user key and token to pull data via endpoint https://api.flickr.com/services/rest/?method=flickr.people.getPublicPhotos
 
-There are two parts to understand here.
-1. For firsts, you can always clone this repo and run it locally to get your Hello Angular app going.
-2. Or, you can learn how to build this yourself from scratch.
-
-Once you know how to stand an application up from scratch, you can use this as a template to build upon for any future more fun applications.
 
 ### Getting Started
 + npm init: This will generate a default package.json for you
@@ -17,11 +12,7 @@ Once you know how to stand an application up from scratch, you can use this as a
 With the above configurations, you should have your ecosystem ready to help you with developing angular applications.
 
 ### What to expect
-The current version of application instantiates angular in a template by adding the 'ng-app' attribute to the template <html> tag. This starts angular 'myApp' application.
-
-+ Constructed a page with header, navigation, layout and footer.
-+ Added basic routing to the application via angular-ui-router
-+ Demonstrated passing of data from state to the component controller (Finally Working!)
+There is a flickr route added to the navigation. This route displays raw photo data (for now) from flickr
 
 
 ### Conventions

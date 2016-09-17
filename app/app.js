@@ -4,7 +4,8 @@ import greetUser from './components/greetUser/greetUser.component';
 import aboutUser from './components/aboutUser/aboutUser.component';
 import userAddress from './components/address/userAddress.component';
 import flickr from './components/flickr/flickr.component';
-import UserAddressConrtoller from './components/address/userAddress.controller';
+//import UserAddressConrtoller from './components/address/userAddress.controller';
+//import FlickrConrtoller from './components/flickr/flickr.controller';
 
 const moduleName = 'myApp';
 var myApp = angular.module(moduleName, ['ui.router', greetUser, aboutUser, userAddress, flickr]);
