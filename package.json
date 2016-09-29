@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Demonstrate running a Hello Angular app with its ecosystem",
   "main": "index.js",
+  "scripts": {
+    "production": "webpack -p",
+    "start": "webpack-dev-server"
+  },
   "dependencies": {
     "angular": "^1.5.8",
     "angular-ui-router": "^0.3.1",
@@ -24,10 +28,6 @@
     "webpack-dev-server": "^1.15.0"
   },
   "devDependencies": {},
-  "scripts": {
-    "production": "webpack -p",
-    "start": "webpack-dev-server"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/richa-verma1001/angular-ecosystem.git"
